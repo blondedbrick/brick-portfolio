@@ -3,54 +3,15 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+<div class="py-2 px-4 w-full bg-amber-400 text-center"><p class="text-black">This site is under construction. It's not currently responsive, accessible, or complete.</p></div>
+<header class="absolute top-8 left-0 w-full p-6">
+	<nav class="bg-white/75 outline outline-indigo-500/10 shadow-lg shadow/10 max-w-3xl w-full rounded-2xl flex justify-between py-2 px-2 mx-auto items-center">
+		<h2 class="text-xl funnel-display font-medium"><a href="/" class="flex items-center gap-3"><img src="/favicon.ico" class="rounded-full bg-indigo-50 size-9" alt=""> {SITE_TITLE}</a></h2>
+		<div class="internal-links flex gap-5 text-lg items-center">
+			<HeaderLink href="/">Projects</HeaderLink>
+			<HeaderLink href="/blog">About</HeaderLink>
+			<HeaderLink href="/about">Skills</HeaderLink>
+			<HeaderLink class="btn-sm btn-primary" href="mailto:brickadamosamador@gmail.com">Let's Connect</HeaderLink>
 		</div>
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
-</style>
