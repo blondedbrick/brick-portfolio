@@ -11,40 +11,29 @@ import "../styles/global.css";
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-stone-500">
+	<body class="relative">
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="">
+			<section class="min-h-[75vh] flex items-center justify-center bg-indigo-50">
+				<div class="container">
+					<h1 class="text-8xl capitalize font-medium mb-6 text-stone-900 funnel-display">Creating <span class="text-indigo-600">Meaningful digital experiences</span>, one Brick at a time.</h1>
+					<p class="text-3xl leading-snug">
+						UX/UI Designer and Web Developer for <a href="https://vincentdesign.ca/">Vincent Design</a>. Also delving into the world of <a href="https://en.wikipedia.org/wiki/Category:Static_website_generators">Static Site Generators</a>.
+					</p>
+				</div>
+			</section>
+
+			<section class="min-h-[75vh] w-full bg-indigo-200 flex flex-col items-center justify-center text-center p-6">
+
+				<div class="size-20 bg-indigo-300 rounded-full flex items-center justify-center mb-6 outline-2 outline-indigo-500/25">
+					<span class="material-symbols-outlined text-6xl! text-indigo-800">
+					construction
+				</span>
+				</div>
+				
+				<h2 class="text-4xl mx-auto text-indigo-900 max-w-2xl pb-8">This section is currently under construction :)</h2>
+
+			</section>
 		</main>
 		<Footer />
 	</body>
