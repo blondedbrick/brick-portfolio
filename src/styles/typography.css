@@ -1,0 +1,36 @@
+.funnel-display {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Funnel Display", sans-serif;
+      font-weight: 500;
+}
+
+
+*{
+    @apply tracking-tight;
+}
+
+main{
+
+    p{
+    @apply text-zinc-700 font-light;
+}
+
+p > a {
+	@apply underline text-indigo-600
+	hover:no-underline hover:text-white hover:bg-indigo-800;
+}
+
+}
+
