@@ -35,13 +35,13 @@
 
 
             img{
-                @apply object-cover w-full h-auto min-w-xl rounded-t-3xl ring-2 border-zinc-800/90 border-12 relative left-12 top-12 scale-100 group-hover:scale-105 transition-all;
+                @apply object-cover aspect-4/3 object-top-left w-full h-auto min-w-xl rounded-t-3xl ring-2 border-zinc-800/90 border-12 relative left-12 top-12 scale-100 group-hover:scale-105 transition-all;
             }
 
         }
 
         h3 {
-            @apply text-3xl mt-3 mb-2 px-4 text-zinc-700;
+            @apply text-[1.625rem] mt-3 mb-2 px-4 text-zinc-700;
 
             a{
                 @apply hover:underline;
