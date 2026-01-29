@@ -4,6 +4,10 @@
 @import "./header.css";
 @import "./components.css";
 
+html{
+  scroll-behavior: smooth;
+}
+
 .container  {
 	@apply max-w-5xl w-full mx-auto px-5;
 }
