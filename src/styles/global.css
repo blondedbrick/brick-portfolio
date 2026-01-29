@@ -8,15 +8,6 @@
 	@apply max-w-5xl w-full mx-auto px-5;
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 500,
-  'GRAD' 0,
-  'opsz' 80
-}
-
 .hero-section {
 	background: radial-gradient(circle,rgb(255, 245, 245) 0%, rgb(255, 241, 232) 63%, rgb(247, 206, 231) 93%, rgb(226, 192, 255) 100%);
 }
