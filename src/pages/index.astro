@@ -14,26 +14,29 @@ import "../styles/global.css";
 	<body class="relative">
 		<Header />
 		<main class="">
+
 			<section class="min-h-screen md:min-h-[85vh] flex items-center justify-center hero-section">
 				<div class="container">
-					<h1 class="text-6xl md:text-7xl xl:text-8xl capitalize font-medium mb-6 text-stone-900 funnel-display">Creating <span class="text-indigo-600 drop-shadow-2xl drop-shadow-purple-400/30">Meaningful digital experiences</span>, one Brick at a time.</h1>
-					<p class="text-2xl md:text-4xl leading-snug">
-						I am currently a UX/UI Designer and Web Developer for <a href="https://vincentdesign.ca/">Vincent Design</a>.
+					<h1 class="text-6xl md:text-7xl xl:text-8xl capitalize font-medium mb-6 text-stone-900 text-center mx-auto">Crafting <span class="text-indigo-600 drop-shadow-2xl drop-shadow-purple-400/30">Meaningful digital experiences</span>, one Brick at a time.</h1>
+					<p class="text-2xl md:text-4xl leading-snug max-w-3xl text-center mx-auto text-indigo-950 px-1">
+						Currently a UX/UI Designer and Web Developer for <a href="https://vincentdesign.ca/">Vincent Design</a>.
 					</p>
 				</div>
 			</section>
 
-
+			<!-- Projects Section -->
 			<section class="min-h-96 w-full bg-indigo-50/75 border-t-3 drop-shadow-2xl border-white/50 pt-20 pb-28">
 
-					<h2 class="text-5xl text-indigo-900 container mb-16" id="projects">Latest Projects</h2>
-					<p></p>
-
+				<div class="container mb-16">
+					<h2 class="text-5xl md:text-6xl text-indigo-900 mb-6" id="projects">Latest Projects</h2>
+						<p class="text-3xl text-zinc-700 leading-snug font-light px-2">Vincent Design Inc. owns the design and code for the projects marked with "VDI", but my responsibilities within the project will be listed. I'm also working on the case studies of these projects.</p>
+				</div>
 				
 				<div class="project-grid container grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-					<div class="project-card Element group">
-						<div class="project-img-container bg-linear-to-b from-rose-700 to-orange-200">
+					<div class="project-card Element group relative">
+						<div class="project-pill"><span>VDI</span></div>
+						<div class="project-img-container bg-linear-to-b from-rose-700 to-orange-200 relative">
 							<img src="/images/projects/rivers-to-success-thumb.webp" class="ring-red-100" alt="Indspire Rivers to Success website thumbnail.">
 						</div>	
 						<h3>
@@ -43,6 +46,7 @@ import "../styles/global.css";
 					</div>
 
 					<div class="project-card Element group">
+						<div class="project-pill"><span>VDI</span></div>
 						<div class="project-img-container bg-linear-to-b from-emerald-300 to-amber-50">
 							<img src="/images/projects/ceda-thumbnail.webp" class="ring-emerald-200" alt="Community Education Development Association Winnipeg thumbnail.">
 						</div>	
@@ -53,6 +57,7 @@ import "../styles/global.css";
 					</div>
 
 					<div class="project-card Element group">
+						<div class="project-pill"><span>VDI</span></div>
 						<div class="project-img-container bg-linear-to-b from-sky-700 to-emerald-100">
 							<img src="/images/projects/the-link-thumbnail.webp" class="ring-red-100" alt="The Link Manitoba website thumbnail.">
 						</div>	
@@ -63,8 +68,8 @@ import "../styles/global.css";
 					</div>
 
 					<div class="project-card Element group pointer-events-none">
+						<div class="project-pill"><span>Upcoming</span></div>
 						<div class="project-img-container bg-linear-to-b from-emerald-900 to-teal-500 relative z-1">
-							<span class="text-base rounded-full px-2 py-1 bg-emerald-950/80 text-zinc-200 absolute left-4 top-4 z-10 shadow-2xl">Upcoming</span>
 							<img src="/images/projects/runner-design-thumbnail.webp" class="ring-red-100 z-2" alt="Runner Design thumbnail.">
 						</div>	
 						<h3>
@@ -74,6 +79,7 @@ import "../styles/global.css";
 					</div>
 
 						<div class="project-card Element group">
+						<div class="project-pill"><span>VDI</span></div>
 						<div class="project-img-container bg-linear-to-b from-yellow-700 to-amber-50">
 							<img src="/images/projects/anfca-thumbnail.webp" class="ring-red-100" alt="ANFCA website thumbnail.">
 						</div>	
@@ -85,6 +91,7 @@ import "../styles/global.css";
 
 
 						<div class="project-card Element group">
+						<div class="project-pill"><span>VDI</span></div>
 						<div class="project-img-container bg-linear-to-b from-violet-950 to-indigo-300">
 							<img src="/images/projects/pgc-thumbnail.webp" class="ring-red-100" alt="PGC website thumbnail.">
 						</div>	
@@ -102,11 +109,10 @@ import "../styles/global.css";
 			</section>
 
 			<!-- Under Construction Section -->
-			<section class="min-h-[75vh] w-full bg-indigo-200 flex flex-col items-center justify-center text-center p-6">
-				
+			<section class="min-h-[75vh] w-full bg-indigo-100 flex flex-col items-center justify-center text-center p-6">
 				<h2 class="text-4xl mx-auto text-indigo-900 max-w-2xl pb-8">This section is currently under construction :)</h2>
-
 			</section>
+
 		</main>
 		<Footer />
 	</body>
