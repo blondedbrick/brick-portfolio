@@ -2,21 +2,24 @@
 const today = new Date();
 ---
 
-<footer class="bg-indigo-100 pt-24">
-
-
-	<div class="container mx-auto flex flex-col gap-4 min-h-120">
-	<h2 class="text-7xl text-indigo-950 capitalize">
+<footer class="pt-32 border-t-4 border-white/25">
+	<div class="container mx-auto flex flex-col gap-4 items-center *:text-center pb-24">
+	<h2 class="text-5xl md:text-6l xl:text-7xl text-indigo-100 capitalize drop-shadow-2xl drop-shadow-rose-400/20">
 		Let's build something awesome.
 	</h2>
-	<p class="text-3xl text-zinc-800 font-light max-w-4xl leading-snug mb-6">Have a web project in mind? A spicy take about Breaking Bad? Let me be the first to know!</p>
+	<p class="text-2xl md:text-3xl text-zinc-400 font-light max-w-2xl leading-snug mb-6">Have a web project in mind? Book recommendation? Curry recipe? Share 'em with me!</p>
 
-	<a href="mailto:brickadamosamador@gmail.com" class="btn btn-primary w-fit">Let's Chat!</a>
+	<a href="mailto:brickadamosamador@gmail.com" class="btn btn-cta w-fit">Let's Chat!</a>
 	</div>
 	
+	<ul class="w-full bg-slate-950/50 backdrop-blur-2xl text-center py-3 px-4 border-t border-white/5
+	*:text-zinc-400 *:font-light flex flex-wrap gap-3 justify-center text-base *:not-last:border-r *:not-last:border-indigo-50/10 *:not-last:pr-3">
 
-	<div class="mx-auto max-w-3xl text-center text-lg py-4">
-		<p class="text-zinc-700 font-light">&copy; {today.getFullYear()} Designed and hand coded by Brick Adamos | Made with AstroJS + TailwindCSS 4 + Cloudflare Pages | All rights reserved.</p>
-	</div>
+		<li>&copy; {today.getFullYear()}</li>
+		<li>Designed and hand coded by Brick Adamos</li>
+		<li>Made with AstroJS + TailwindCSS 4 + Cloudflare Pages</li>
+		<li>All rights reserved</li>
+
+	</ul>
 	
 </footer>
