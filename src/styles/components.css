@@ -102,3 +102,8 @@ button{
     @apply hover:cursor-pointer;
 
 }
+
+
+footer{
+        background: radial-gradient(circle, rgb(12 21 40) 2%, rgb(4 2 47) 72%, rgb(123 55 65) 93%, rgb(201 178 176) 100%);
+}
