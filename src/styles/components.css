@@ -60,7 +60,7 @@ header{
 
     .project-card {
 
-        @apply w-full h-auto aspect-4/3 bg-white/90 rounded-2xl ring-2 ring-neutral-200/5 shadow-md shadow/25 relative;
+        @apply w-full h-auto aspect-4/3 bg-white/90 rounded-2xl ring-2 ring-indigo-800/10 shadow-md shadow/25 relative;
 
         .project-pill{
 
@@ -100,6 +100,51 @@ header{
 button{
 
     @apply hover:cursor-pointer;
+
+}
+
+
+#skills{
+
+    .skills-container{
+
+        h3{
+
+            @apply text-3xl mb-8 text-zinc-600;
+
+            font-family: 'inter', sans-serif;
+
+        }
+
+        ul{
+            @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-1 gap-y-4 mb-24;
+            
+            li{
+                @apply w-full h-full text-xl flex flex-col items-center rounded-xl px-1 pt-1 pb-2 aspect-square;
+
+
+                figure{
+
+                    @apply w-full h-full bg-slate-400/10 flex items-center justify-center mb-2 rounded-xl;
+
+                    svg{
+                        @apply size-24 text-indigo-950;
+                    }
+
+                }
+
+                .skill-label{
+
+                    @apply text-zinc-700;
+
+                }
+
+            }
+
+        }
+
+
+    }
 
 }
 
