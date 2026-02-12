@@ -13,24 +13,36 @@ import "../styles/global.css";
 	</head>
 	<body class="relative">
 		<Header />
-		<main class="">
-			<section class="min-h-[50vh] md:min-h-[85vh] flex sm:items-center sm:justify-center hero-section py-32 sm:py-40">
-				<div class="container">
-					<h1 class="text-5xl sm:text-6xl md :text-7xl xl:text-8xl capitalize font-medium mb-8 text-stone-900 sm:text-center mx-auto">Crafting <span class="text-indigo-600 drop-shadow-2xl drop-shadow-purple-400/30">Meaningful digital experiences</span>, one Brick at a time.</h1>
-					<p class="text-2xl md:text-3xl leading-snug max-w-3xl sm:text-center mx-auto text-indigo-950/80 px-1 inter">
-						UX/UI Designer and Web Developer for Vincent Design. Professional shawarma devourer. Just also became a Canadian Citizen! 🇨🇦
-					</p>
-
-
+		<main class="relative">
+			<section class="min-h-[50vh] md:min-h-[90vh] flex sm:items-center sm:justify-center hero-section pt-48 pb-32 sm:48 relative overflow-hidden m-2 rounded-4xl">
+				<div class="container max-w-5xl! relative z-1">
+					<h1 class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl sm:text-center capitalize font-medium mb-20 text-slate-950/90 mx-auto mix-blend-exclusion">Crafting Meaningful digital experiences, one Brick at a time.</h1>
+					<ul class="text-lg sm:text-xl leading-snug mx-auto text-indigo-950/75 px-2 sm:px-1 inter
+								grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl
+								*:bg-white/30 *:p-2 *:sm:p-4 *:rounded-xl *:ring *:ring-slate-300/40 *:flex *:sm:flex-col *:gap-x-4 *:gap-y-12 *:max-sm:items-center *:shadow-md *:shadow-slate-500/10 *:backdrop-blur-md">
+						<li>
+							<span class="size-12 bg-slate-300/40 rounded-full flex items-center justify-center">💻
+							</span>Currently a UX/UI Designer for Vincent Design.</li>
+						<li>
+							<span class="size-12 bg-slate-300/40  rounded-full flex items-center justify-center">🌯
+							</span>Professional shawarma devourer.</li>
+						<li><span class="size-12 bg-slate-300/40  rounded-full flex items-center justify-center">🇨🇦
+							</span>Just also became a Canadian Citizen!</li>
+					</ul>
 				</div>
+
+				<div
+  class="absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#E0E0EE_1px,transparent_1px)] bg-size-[16px_16px] opacity-75"
+></div>
+
 			</section>
 
 			<!-- Projects Section -->
-			<section class="min-h-96 w-full bg-zinc-50/75 border-t-3 border-white/50 pt-20 pb-28">
+			<section class="min-h-96 w-full bg-slate-50/75 border-t-3 border-white/50 pt-20 pb-28">
 
 				<div class="container mb-16">
 					<h2 class="text-4xl md:text-5xl text-indigo-900 mb-6" id="projects">Featured Projects</h2>
-					<p class="text-2xl md:text-3xl text-zinc-600 leading-snug inter px-2">Vincent Design Inc. owns the design and code for the projects marked with "VDI". But my responsibilities within the project will be listed. I'm also working on the case studies of these projects.</p>
+					<p class="text-2xl md:text-3xl text-slate-600 leading-snug inter px-2">Vincent Design Inc. owns the design and code for the projects marked with "VDI". But my responsibilities within the project will be listed. I'm also working on the case studies of these projects.</p>
 				</div>
 				
 				<div class="project-grid container grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -70,7 +82,7 @@ import "../styles/global.css";
 
 					<div class="project-card Element group pointer-events-none">
 						<div class="project-pill ring-white/10!"><span>Upcoming</span></div>
-						<div class="project-img-container bg-linear-to-b from-zinc-900 to-zinc-500 relative z-1">
+						<div class="project-img-container bg-linear-to-b from-slate-900 to-slate-500 relative z-1">
 							<img src="/images/projects/runner-design-thumbnail.webp" class="ring-red-100 z-2 saturate-25 opacity-75" alt="Runner Design thumbnail.">
 						</div>	
 						<h3>
@@ -116,7 +128,7 @@ import "../styles/global.css";
 
 
 			<!-- Skills Section -->
-			<section class="min-h-[75vh] py-24 bg-zinc-50" id="skills">
+			<section class="min-h-[75vh] py-24 bg-slate-50" id="skills">
 				<div class="skills-container container">
 				<h2 class="text-5xl mb-16 text-indigo-900" id="skills">My Skills</h2>
 

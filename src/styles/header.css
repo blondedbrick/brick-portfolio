@@ -1,6 +1,6 @@
 .internal-links > a{
 
-    @apply text-stone-600 hover:underline;
+    @apply text-slate-600 hover:underline;
 
 
 }
