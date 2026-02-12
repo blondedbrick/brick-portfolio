@@ -44,7 +44,7 @@ main{
 
     font-family: "Inter", sans-serif;
 
-    @apply text-zinc-700 font-light;
+    @apply text-slate-700 font-light;
 }
 
 p > a {

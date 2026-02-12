@@ -12,11 +12,6 @@ html{
 	@apply max-w-5xl w-full mx-auto px-5;
 }
 
-.hero-section {
-	background: radial-gradient(circle,rgb(255, 245, 245) 0%, rgb(255, 241, 232) 63%, rgb(247, 206, 231) 93%, rgb(226, 192, 255) 100%);
-}
-
-
 .Element {
   position: relative;
 }
