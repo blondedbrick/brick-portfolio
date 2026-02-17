@@ -8,6 +8,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  @apply bg-slate-50;
+}
+
 .container  {
 	@apply max-w-5xl w-full mx-auto px-5;
 }
