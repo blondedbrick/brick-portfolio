@@ -27,27 +27,27 @@
 
 header{
 
+
+    @apply relative backdrop-blur-md bg-white/10 border-b border-indigo-400/20 w-full ;
+
     #header-nav-bar{
 
-    @apply bg-white/75 outline outline-indigo-500/10 shadow-lg shadow/10 max-w-3xl w-full rounded-2xl flex justify-between py-2 px-2 mx-auto items-center relative backdrop-blur-md;
+    @apply flex justify-between py-2 px-2 mx-auto items-center max-w-7xl w-full relative;
 
     
         #menu-toggle{
-
             @apply hover:bg-slate-100 ring-1 ring-slate-200/50 shadow-md hover:ring-slate-600 p-1 rounded-lg;
 
         }
 
         #mobile-menu{
-
-
             @apply sm:flex gap-5 text-lg items-center flex-row;
         }
 
         @media (width < 40rem ) {
 
             #mobile-menu{ 
-                @apply hidden gap-2 flex-col items-baseline absolute right-0 top-0 bg-white/80 outline-2 outline-indigo-500/10 backdrop-blur-xl rounded-2xl px-4 py-4 z-5 shadow-xl min-w-64 *:w-full *:not-last:rounded-lg *:not-last:p-2 *:not-last:hover:bg-slate-100;
+                @apply hidden gap-2 flex-col items-baseline absolute right-4 top-4 bg-white outline outline-indigo-500/10 rounded-2xl px-4 py-4 z-50 min-w-64 *:w-full *:not-last:rounded-lg *:not-last:p-2 *:not-last:hover:bg-slate-100;
             }
          }
 
@@ -57,17 +57,15 @@ header{
 
 .project-grid{
 
-
     .project-card {
 
-        @apply w-full h-auto aspect-4/3 bg-white/90 rounded-2xl ring-2 ring-indigo-800/10 shadow-md shadow/25 relative;
+        @apply w-full h-auto aspect-4/3 bg-white/90 rounded-2xl ring ring-indigo-800/10 relative;
 
         .project-pill{
 
-                @apply text-base rounded-full px-3 py-1 bg-slate-900/50 ring-2 ring-slate-700/25 text-white absolute left-4 top-4 z-10 backdrop-blur;
+                @apply text-base rounded-full px-3 py-1 bg-slate-900/50 ring ring-slate-200/25 text-white absolute left-4 top-4 z-10 backdrop-blur;
 
             }
-
 
         .project-img-container{
 
@@ -80,7 +78,12 @@ header{
         }
 
         h3 {
-            @apply text-[1.625rem] mt-3 mb-2 px-4 text-slate-700;
+            @apply text-2xl mt-3 mb-2 px-4 text-slate-800;
+
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
 
             a{
                 @apply hover:underline;
@@ -88,7 +91,7 @@ header{
         }
 
         & > p{
-            @apply text-2xl px-4 pb-4 text-slate-600;
+            @apply text-xl px-4 pb-4 text-slate-500;
         }
 
     }
@@ -117,25 +120,23 @@ button{
         }
 
         ul{
-            @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-1 gap-y-4 mb-24;
+            @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-1 gap-y-4 mb-24 bg-white px-3 pt-3 pb-4 rounded-3xl ring ring-slate-200;
             
             li{
                 @apply w-full h-full text-xl flex flex-col items-center rounded-xl px-1 pt-1 pb-2 aspect-square;
-
 
                 figure{
 
                     @apply w-full h-full bg-slate-400/10 flex items-center justify-center mb-2 rounded-xl;
 
                     svg{
-                        @apply size-24 text-indigo-950;
+                        @apply size-18 text-indigo-950;
                     }
 
                 }
-
                 .skill-label{
 
-                    @apply text-slate-700;
+                    @apply text-slate-700 text-base;
 
                 }
 
