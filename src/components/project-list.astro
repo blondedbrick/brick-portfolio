@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<ul >
+  {projects.map((project) => (
+    <li>
+      <img 
+        src={project.data.image} 
+        alt={project.data.image_alt} 
+      />
+      
+      <h3>
+        {project.data.link ? (
+          <a href={project.data.link}>{project.data.title}</a>
+        ) : (
+          project.data.title
+        )}
+      </h3>
+
+      <p>
+        {project.data.client} — {project.data.role}
+      </p>
+
+      <ul>
+        {project.data.tags.map((tag) => (
+          <li>
+            {tag}
+          </li>
+        ))}
+      </ul>
+    </li>
+  ))}
+</ul>

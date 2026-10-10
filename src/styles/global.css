@@ -1,33 +1,6 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@import "./typography.css";
-@import "./header.css";
-@import "./components.css";
-
-html{
-  scroll-behavior: smooth;
-}
-
-body{
-  @apply bg-slate-50;
-}
-
-.container  {
-	@apply max-w-5xl w-full mx-auto px-5;
-}
-
-.Element {
-  position: relative;
-}
-
-.Element-Primary-Action::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.Element-Secondary-Action {
-  position: relative;
-  z-index: 2;
+.container{
+    @apply max-w-6xl mx-auto;
 }
