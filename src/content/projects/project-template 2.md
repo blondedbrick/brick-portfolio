@@ -1,6 +1,6 @@
 ---
-title: "Project Title 2"
-client: "Project Client"
+title: "First Nations Financial Management Board"
+client: "FNFMB"
 role: "UX/UI Design & Web Development"
 tags: ["Astro", "Tailwind", "Figma"]
 featured: true

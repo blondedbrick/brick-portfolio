@@ -14,9 +14,9 @@ import ProjectList from '../components/project-list.astro';
     </head>
     <body class="">
 
-        <header class="py-2 border-b border-b-neutral-500">
-			<nav class="flex justify-between items-center container">
-				 <div class="size-16 bg-neutral-900 rounded-xl text-white text-3xl flex justify-center items-center">`B`</div>
+        <header class="py-2 border-b border-b-primary-200">
+			<nav class="flex justify-between items-center container max-w-4xl!">
+				 <div class="size-14 bg-primary-900 rounded-xl text-white text-3xl flex justify-center items-center">`B`</div>
 
 				<ul class="flex gap-8 text-xl">
 					<li><a href="#work">Work</a></li>
@@ -27,12 +27,12 @@ import ProjectList from '../components/project-list.astro';
         </header>
 
 		<!-- Hero Section -->
-		<div class="min-h-180 border-b border-b-neutral-200 flex justify-center items-center text-center">
+		<div class="min-h-180 border-b border-b-primary-200 flex justify-center items-center text-center">
 
 					<div class="flex flex-col items-center max-w-180 gap-4 pb-12">
-					<h1 class="text-8xl font-normal mb-4">Brick can make things click.</h1>
-					<p class="text-3xl mb-4 font-light">Hello! I'm a Hybrid Web Developer and Designer based in Winnipeg, Manitoba. I specialize in creating meaningful user centric digital experiences.</p>
-					<a href="mailto:brickadamosamador@gmail.com" class="text-2xl px-6 py-3 rounded-xl border-t-4 border-neutral-600 bg-neutral-800 text-neutral-50 font-light shadow-lg hover:underline">Let's Connect</a>
+					<h1 class="text-8xl font-medium mb-4">Brick can make things click.</h1>
+					<p class="text-3xl mb-4 font-light">Hi! I'm a Hybrid Web Developer and Designer based in Winnipeg, Manitoba. I specialize in creating meaningful user centric digital experiences.</p>
+					<a href="mailto:brickadamosamador@gmail.com" class="text-2xl px-6 py-3 rounded-xl border-t-4 border-primary-600 bg-primary-800 text-primary-50 shadow-lg hover:underline">Let's Connect</a>
 					</div>
 			      
 
@@ -40,25 +40,55 @@ import ProjectList from '../components/project-list.astro';
 		</div>
 
 
-            <h2 id="work">Professional Work</h2>
+        <!-- Work section -->
+
+        <div class="section-styling container">
+            
+            <h2 id="work" class="not-prose section-heading">Professional Work</h2>
             <!-- Dynamic Content Collection Loop -->
             <ProjectList />
 
-            <h2 id="about">About Me</h2>
-            <h3>Hi! I'm Brick Adamos, a Hybrid Web Developer and Designer.</h3>
+        </div>
+
+
+        <!-- About section -->
+        <div class="section-styling container">
+
+            <h2 id="about" class="not-prose section-heading">About Me</h2>
+
+            <div class="max-w-3xl mx-auto">
+            <div class="size-36 bg-primary-500 rounded-full"></div>
+            <h3 class="text-5xl not-prose font-semibold">Hi! I'm Brick Adamos, a Hybrid Web Developer and Designer.</h3>
             <p>I have 3+ years of experience in the industry where I specialize in building accessible, user-centric product solutions.
 
             My approach balances deep user empathy with practical execution. I do my best to ensure every solution is intuitively designed, technically grounded, and built to ship on time.
 
             When I'm not in front of a computer, you can find me running a half marathon, doing street photography, or spectacularly failing in the kitchen.</p>
+            </div>
+            
 
-            <h2 id="contact">Contact</h2>
-            <h3>All journeys start with the first step.</h3>
+
+        </div>
+
+
+        <!-- contact section -->
+        
+        <div class="section-styling container">
+
+            <h2 id="contact" class="not-prose section-heading">Contact</h2>
+
+            <div class="max-w-3xl mx-auto">
+                <h3>All journeys start with the first step.</h3>
             <p>Have a role in mind, a project, or anything you'd like to share? I'd love to hear about it!</p>
-
             <a href="mailto:brickadamosamador@gmail.com">Let's Connect</a>
 
-        <footer>
+            </div>
+            
+
+        </div>
+
+
+        <footer class="p-4 text-center border-t border-t-primary-200 text-xl">
             <p>© 2026 Brick Adamos · Made with AstroJS + Tailwind</p>
         </footer>
     </body>
