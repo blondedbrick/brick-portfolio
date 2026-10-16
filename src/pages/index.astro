@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 import ProjectList from '../components/project-list.astro';
+import NavBar from '../components/nav-bar.astro';
+
+const currentYear = new Date().getFullYear();
 ---
 
 <html lang="en">
@@ -14,82 +17,83 @@ import ProjectList from '../components/project-list.astro';
     </head>
     <body class="">
 
-        <header class="py-2 border-b border-b-primary-200">
-			<nav class="flex justify-between items-center container max-w-4xl!">
-				 <div class="size-14 bg-primary-900 rounded-xl text-white text-3xl flex justify-center items-center">`B`</div>
-
-				<ul class="flex gap-8 text-xl">
-					<li><a href="#work">Work</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-        </header>
+        <NavBar />
 
 		<!-- Hero Section -->
-		<div class="min-h-180 border-b border-b-primary-200 flex justify-center items-center text-center">
+		<section class="min-h-180 flex justify-center items-center text-center">
 
-					<div class="flex flex-col items-center max-w-180 gap-4 pb-12">
-					<h1 class="text-8xl font-medium mb-4">Brick can make things click.</h1>
-					<p class="text-3xl mb-4 font-light">Hi! I'm a Hybrid Web Developer and Designer based in Winnipeg, Manitoba. I specialize in creating meaningful user centric digital experiences.</p>
-					<a href="mailto:brickadamosamador@gmail.com" class="text-2xl px-6 py-3 rounded-xl border-t-4 border-primary-600 bg-primary-800 text-primary-50 shadow-lg hover:underline">Let's Connect</a>
+					<div class="flex flex-col items-center max-w-160 gap-4 pb-12 px-12">
+					<h1 class="text-5xl md:text-6xl lg:text-7xl mb-2 md:mb-4 font-medium">Brick can make<br>things click.</h1>
+					<p class="text-xl md:text-2xl mb-4 font-light text-primary-700">👋 Mabuting Araw / Good Day! I'm a Hybrid Web Developer and Designer based in Winnipeg, Manitoba. I specialize in creating meaningful user centric digital experiences.</p>
+					<a href="mailto:brickadamosamador@gmail.com" class="btn">Let's Connect</a>
 					</div>
 			      
 
 
-		</div>
+        </section>
 
 
         <!-- Work section -->
 
-        <div class="section-styling container">
+        <section class="section-styling">
+
+            <div class="container">
             
             <h2 id="work" class="not-prose section-heading">Professional Work</h2>
-            <!-- Dynamic Content Collection Loop -->
+
             <ProjectList />
 
-        </div>
+            </div>
+
+        </section>
 
 
         <!-- About section -->
-        <div class="section-styling container">
+        <section class="section-styling">
 
-            <h2 id="about" class="not-prose section-heading">About Me</h2>
+            <div class="container">
 
-            <div class="max-w-3xl mx-auto">
-            <div class="size-36 bg-primary-500 rounded-full"></div>
-            <h3 class="text-5xl not-prose font-semibold">Hi! I'm Brick Adamos, a Hybrid Web Developer and Designer.</h3>
-            <p>I have 3+ years of experience in the industry where I specialize in building accessible, user-centric product solutions.
+                <h2 id="about" class="not-prose section-heading">About Me</h2>
 
-            My approach balances deep user empathy with practical execution. I do my best to ensure every solution is intuitively designed, technically grounded, and built to ship on time.
+                <div class="content">
+                <img class="size-36 bg-primary-500 rounded-full not-prose contrast-110" src="src/media/images/brick-headshot.webp" alt="Brick Adamos" />
+                <h3>Hi! I'm Brick Adamos, a Hybrid Web Developer and Designer.</h3>
+                <p>I have 3+ years of experience in the industry where I specialize in building accessible, user-centric product solutions.
 
-            When I'm not in front of a computer, you can find me running a half marathon, doing street photography, or spectacularly failing in the kitchen.</p>
-            </div>
+                My approach balances deep user empathy with practical execution. I do my best to ensure every solution is intuitively designed, technically grounded, and built to ship on time.
+
+                When I'm not in front of a computer, you can find me running a half marathon, doing street photography, or spectacularly failing in the kitchen.</p>
+
+                <a class="btn not-prose" href="https://www.linkedin.com/in/brick-adamos" target="_blank">Linkedin Profile</a>
+                </div>
             
+            </div>
 
-
-        </div>
+        </section>
 
 
         <!-- contact section -->
         
-        <div class="section-styling container">
+        <section class="section-styling pb-20">
 
-            <h2 id="contact" class="not-prose section-heading">Contact</h2>
+            <div class="container">
 
-            <div class="max-w-3xl mx-auto">
-                <h3>All journeys start with the first step.</h3>
-            <p>Have a role in mind, a project, or anything you'd like to share? I'd love to hear about it!</p>
-            <a href="mailto:brickadamosamador@gmail.com">Let's Connect</a>
+                    <h2 id="contact" class="not-prose section-heading">Contact</h2>
+
+                    <div class="content">
+                    <h3>Say Hi!</h3>
+                    <p>Have a role in mind, a project, or anything you'd like to share? I'd love to hear about it!</p>
+                    <a href="mailto:brickadamosamador@gmail.com" class="btn not-prose">Let's Connect</a>
+            </div>
 
             </div>
-            
-
-        </div>
 
 
-        <footer class="p-4 text-center border-t border-t-primary-200 text-xl">
-            <p>© 2026 Brick Adamos · Made with AstroJS + Tailwind</p>
+        </section>
+
+
+        <footer class="p-4 text-center border-t border-t-primary-200 text-lg font-light">
+            <p class="text-primary-700">© {currentYear} Brick Adamos · Made with AstroJS + Tailwind</p>
         </footer>
     </body>
 </html>

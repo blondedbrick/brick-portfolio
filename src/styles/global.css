@@ -5,6 +5,8 @@
 
 /* using system fonts as default sans serif font for performance and accessibility.     */
 --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 
 --color-primary-50: var(--color-neutral-50);
 --color-primary-100: var(--color-neutral-100);
@@ -20,29 +22,69 @@
 
 }
 
+ html {
+    scroll-behavior: smooth;
+  }
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
 
 body{
-    @apply tracking-[-0.0125em];
+    @apply bg-primary-50 tracking-[-0.0125em];
+
+    a{
+        @apply hover:underline;
+    }
 }
 
 .container{
-    @apply max-w-5xl mx-auto px-6;
+    @apply max-w-5xl! mx-auto px-6;
 }
 
 .section-styling{
-    @apply py-16 prose prose-2xl;
-}
+    @apply border-t border-primary-300 border-dashed;
 
-.section-heading{
-    @apply text-2xl uppercase flex;
-
-
-    &::after{
-        content: "";
-        width: --webkit-fill-available;
-        height: 1px;
-        background-color:black;
-        display: block;
+    & > .container {
+        @apply pt-12 pb-24 px-12 border-x border-primary-300 border-dashed;
+    
+    .content{
+        @apply max-w-2xl mx-auto flex flex-col prose-xl lg:prose-2xl prose-a:hover:no-underline
+        prose-headings:leading-tight prose-headings:font-medium prose-h3:text-3xl md:prose-h3:text-4xl lg:prose-h3:text-5xl prose-h3:mt-8 not-prose-headings:font-light prose-p:text-primary-600;
+    }
+    
     }
 
+}
+
+.section-heading {
+  @apply text-2xl uppercase flex items-center gap-4 mb-12 font-mono text-primary-900;
+
+  &::after {
+    content: "";
+    @apply flex-1 h-px bg-primary-300;
+  }
+}
+
+
+.btn {
+    @apply px-6 py-3 rounded-2xl border-t-3 border-primary-700 active:border-primary-800
+    bg-primary-900 shadow-lg hover:bg-primary-800 hover:shadow-none
+    text-xl! text-primary-50 hover:underline w-fit;
+}
+
+.Card {
+	position: relative; /* 1 */
+}
+
+.Card-Primary-Action::before {
+	content: ''; /* 1 */
+	position: absolute; /* 2 */
+	inset: 0; /* 2 */
+	z-index: 1; /* 3 */
 }
