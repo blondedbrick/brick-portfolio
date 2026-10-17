@@ -1,33 +1,90 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@import "./typography.css";
-@import "./header.css";
-@import "./components.css";
+@theme {
 
-html{
-  scroll-behavior: smooth;
+/* using system fonts as default sans serif font for performance and accessibility.     */
+--font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+--color-primary-50: var(--color-neutral-50);
+--color-primary-100: var(--color-neutral-100);
+--color-primary-200: var(--color-neutral-200);
+--color-primary-300: var(--color-neutral-300);
+--color-primary-400: var(--color-neutral-400);
+--color-primary-500: var(--color-neutral-500);
+--color-primary-600: var(--color-neutral-600);
+--color-primary-700: var(--color-neutral-700);
+--color-primary-800: var(--color-neutral-800);
+--color-primary-900: var(--color-neutral-900);
+--color-primary-950: var(--color-neutral-950);
+
 }
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
 
 body{
-  @apply bg-slate-50;
+    @apply bg-primary-50 tracking-[-0.0125em];
+
+    a{
+        @apply hover:underline;
+    }
 }
 
-.container  {
-	@apply max-w-5xl w-full mx-auto px-5;
+.container{
+    @apply max-w-5xl! mx-auto px-6;
 }
 
-.Element {
-  position: relative;
+.section-styling{
+    @apply border-t border-primary-300 border-dashed;
+
+    & > .container {
+        @apply pt-12 pb-24 px-12 lg:border-x border-primary-300 border-dashed;
+    
+    .content{
+        @apply max-w-2xl mx-auto flex flex-col prose-xl lg:prose-2xl prose-a:hover:no-underline
+        prose-headings:leading-tight prose-headings:font-medium prose-h3:text-3xl md:prose-h3:text-4xl lg:prose-h3:text-5xl prose-h3:mt-8 not-prose-headings:font-light prose-p:text-primary-600;
+    }
+    
+    }
+
 }
 
-.Element-Primary-Action::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
+.section-heading {
+  @apply text-2xl uppercase flex items-center gap-4 mb-12 font-mono text-primary-900;
+
+  &::after {
+    content: "";
+    @apply flex-1 h-px bg-primary-300;
+  }
 }
 
-.Element-Secondary-Action {
-  position: relative;
-  z-index: 2;
+
+.btn {
+    @apply px-6 py-3 rounded-2xl border-t-3 border-primary-700 active:border-primary-800
+    bg-primary-900 shadow-lg hover:bg-primary-800 hover:shadow-none
+    text-xl! text-primary-50 hover:underline w-fit;
+}
+
+.Card {
+	position: relative; /* 1 */
+}
+
+.Card-Primary-Action::before {
+	content: ''; /* 1 */
+	position: absolute; /* 2 */
+	inset: 0; /* 2 */
+	z-index: 1; /* 3 */
 }
