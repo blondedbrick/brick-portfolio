@@ -5,7 +5,7 @@ role: "Web Development"
 tags: ["Wordpress", "PHP", "Tailwind"]
 featured: true
 pubDate: 2026-03-15
-image: src/media/images/anfca-thumb.webp
+image: /images/anfca-thumb.webp
 image_alt: "Alberta Native Friendship Centre Website"
 link: https://anfca.com
 ---
