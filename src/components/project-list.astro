@@ -12,7 +12,8 @@ const projects = await getCollection('projects');
           <img 
         class="object-contain rounded-lg group-hover:shadow-lg group-hover:outline group-hover:outline-primary-600/25"
         src={project.data.image} 
-        alt={project.data.image_alt} 
+        alt={project.data.image_alt}
+        loading="lazy"
       />
 
       </div>
