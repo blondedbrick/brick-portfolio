@@ -24,12 +24,13 @@ const currentYear = new Date().getFullYear();
         <NavBar />
 
 		<!-- Hero Section -->
+         <main>
 		<section class="min-h-160 md:min-h-180 flex justify-center items-center text-center">
 
 					<div class="flex flex-col items-center max-w-160 gap-4 pb-12 px-12">
-					<h1 class="text-5xl md:text-6xl lg:text-7xl mb-2 md:mb-4 font-medium">Brick can make<br>things click!</h1>
+					<h1 class="text-5xl md:text-6xl lg:text-7xl mb-2 md:mb-4 font-medium">Brick can make<br>things <span class="font-serif italic scale-125">click!</span></h1>
 					<p class="text-xl md:text-2xl mb-4 font-light text-primary-700">👋 Mabuting Araw / Good Day! I'm a Hybrid Web Developer and Designer based in Winnipeg, Manitoba. I specialize in creating meaningful user centric digital experiences.</p>
-					<a href="mailto:brickadamosamador@gmail.com" class="btn">Let's Connect</a>
+					<a href="mailto:brickadamosamador@gmail.com" class="btn"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>envelope</title><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M2 20V4h20v16zm10-7l8-5V6l-8 5l-8-5v2z"/></svg> Let's Connect!</a>
 					</div>
 			      
 
@@ -43,9 +44,13 @@ const currentYear = new Date().getFullYear();
 
             <div class="container">
             
+            <a href="#skip-link" class="sr-only focus:not-sr-only underline text-center w-full pt-2 pb-8 mb-8">Skip this section.</a>
+
             <h2 id="work" class="not-prose section-heading">Professional Work</h2>
 
             <ProjectList />
+
+            <div id="skip-link"></div>
 
             </div>
 
@@ -68,7 +73,7 @@ const currentYear = new Date().getFullYear();
 
                 When I'm not in front of a computer, you can find me running a half marathon, doing street photography, or spectacularly failing in the kitchen.</p>
 
-                <a class="btn not-prose" href="https://www.linkedin.com/in/brick-adamos" target="_blank">Linkedin Profile</a>
+                <a class="btn not-prose" href="https://www.linkedin.com/in/brick-adamos" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><title>Linkedin</title><!-- Icon from CoreUI Brands by creativeLabs Łukasz Holeczek - https://creativecommons.org/publicdomain/zero/1.0/ --><path fill="currentColor" d="M27.26 27.271h-4.733v-7.427c0-1.771-.037-4.047-2.475-4.047c-2.468 0-2.844 1.921-2.844 3.916v7.557h-4.739V11.999h4.552v2.083h.061c.636-1.203 2.183-2.468 4.491-2.468c4.801 0 5.692 3.161 5.692 7.271v8.385zM7.115 9.912a2.75 2.75 0 0 1-2.751-2.756a2.753 2.753 0 1 1 2.751 2.756m2.374 17.359H4.74V12h4.749zM29.636 0H2.36C1.057 0 0 1.031 0 2.307v27.387c0 1.276 1.057 2.307 2.36 2.307h27.271c1.301 0 2.369-1.031 2.369-2.307V2.307C32 1.031 30.932 0 29.631 0z"/></svg> Linkedin Profile <span class="sr-only">Opens in a new window.</span></a>
                 </div>
             
             </div>
@@ -87,13 +92,15 @@ const currentYear = new Date().getFullYear();
                     <div class="content">
                     <h3>Say Hi!</h3>
                     <p>Have a role in mind, a project, or anything you'd like to share? I'd love to hear about it!</p>
-                    <a href="mailto:brickadamosamador@gmail.com" class="btn not-prose">Let's Connect</a>
+                    <a href="mailto:brickadamosamador@gmail.com" class="btn not-prose"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>envelope</title><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M2 20V4h20v16zm10-7l8-5V6l-8 5l-8-5v2z"/></svg> Let's Connect!</a>
             </div>
 
             </div>
 
 
         </section>
+
+        </main>
 
 
         <footer class="p-4 text-center border-t border-t-primary-200 text-lg font-light">

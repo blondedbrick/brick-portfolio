@@ -6,6 +6,7 @@
 /* using system fonts as default sans serif font for performance and accessibility.     */
 --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
 
 --color-primary-50: var(--color-neutral-50);
@@ -36,6 +37,9 @@
 
 
 body{
+
+  overflow-x: hidden;
+
     @apply bg-primary-50 tracking-[-0.0125em];
 
     a{
@@ -44,7 +48,7 @@ body{
 }
 
 .container{
-    @apply max-w-5xl! mx-auto px-6;
+    @apply max-w-5xl! mx-auto px-4 sm:px-6;
 }
 
 .section-styling{
@@ -63,7 +67,7 @@ body{
 }
 
 .section-heading {
-  @apply text-2xl uppercase flex items-center gap-4 mb-12 font-mono text-primary-900;
+  @apply text-2xl uppercase flex items-center gap-4 mb-12 font-serif text-primary-900 italic tracking-wider;
 
   &::after {
     content: "";
@@ -73,9 +77,13 @@ body{
 
 
 .btn {
-    @apply px-6 py-3 rounded-2xl border-t-3 border-primary-700 active:border-primary-800
+    @apply px-6 py-3 rounded-2xl border-t-3 border-primary-700 active:border-primary-800 inline-flex items-center gap-2
     bg-primary-900 shadow-lg hover:bg-primary-800 hover:shadow-none
     text-xl! text-primary-50 hover:underline w-fit;
+
+    &:has(svg) {
+        @apply pl-5 pr-6;
+    }
 }
 
 .Card {
