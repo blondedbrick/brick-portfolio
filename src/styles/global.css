@@ -55,7 +55,7 @@ body{
     @apply border-t border-primary-300 border-dashed;
 
     & > .container {
-        @apply pt-12 pb-24 px-12 lg:border-x border-primary-300 border-dashed;
+        @apply pt-12 pb-24 px-8 md:px-12 lg:border-x border-primary-300 border-dashed;
     
     .content{
         @apply max-w-2xl mx-auto flex flex-col prose-xl lg:prose-2xl prose-a:hover:no-underline
